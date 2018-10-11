@@ -13,6 +13,10 @@
 		C04A9AA9216DFB85000BACD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C04A9AA8216DFB85000BACD4 /* Assets.xcassets */; };
 		C04A9AAC216DFB85000BACD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C04A9AAA216DFB85000BACD4 /* LaunchScreen.storyboard */; };
 		C04A9AAF216DFB85000BACD4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C04A9AAE216DFB85000BACD4 /* main.m */; };
+		C0F5F74E216F3568003820E6 /* CX3DTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F5F74D216F3568003820E6 /* CX3DTouch.m */; };
+		C0F5F754216F3806003820E6 /* AppDelegate+touch.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F5F753216F3806003820E6 /* AppDelegate+touch.m */; };
+		C0F5F759216F476F003820E6 /* CXListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F5F758216F476F003820E6 /* CXListViewController.m */; };
+		C0F5F75C216F49CA003820E6 /* CXTouchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F5F75B216F49CA003820E6 /* CXTouchViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,14 @@
 		C04A9AAB216DFB85000BACD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C04A9AAD216DFB85000BACD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C04A9AAE216DFB85000BACD4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C0F5F74C216F3568003820E6 /* CX3DTouch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CX3DTouch.h; sourceTree = "<group>"; };
+		C0F5F74D216F3568003820E6 /* CX3DTouch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CX3DTouch.m; sourceTree = "<group>"; };
+		C0F5F752216F3806003820E6 /* AppDelegate+touch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+touch.h"; sourceTree = "<group>"; };
+		C0F5F753216F3806003820E6 /* AppDelegate+touch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+touch.m"; sourceTree = "<group>"; };
+		C0F5F757216F476F003820E6 /* CXListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CXListViewController.h; sourceTree = "<group>"; };
+		C0F5F758216F476F003820E6 /* CXListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CXListViewController.m; sourceTree = "<group>"; };
+		C0F5F75A216F49CA003820E6 /* CXTouchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CXTouchViewController.h; sourceTree = "<group>"; };
+		C0F5F75B216F49CA003820E6 /* CXTouchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CXTouchViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,15 +72,39 @@
 			children = (
 				C04A9A9F216DFB84000BACD4 /* AppDelegate.h */,
 				C04A9AA0216DFB84000BACD4 /* AppDelegate.m */,
-				C04A9AA2216DFB84000BACD4 /* ViewController.h */,
-				C04A9AA3216DFB84000BACD4 /* ViewController.m */,
-				C04A9AA5216DFB84000BACD4 /* Main.storyboard */,
+				C0F5F755216F46FC003820E6 /* 应用外 Touch */,
+				C0F5F756216F4723003820E6 /* 应用内 Touch */,
 				C04A9AA8216DFB85000BACD4 /* Assets.xcassets */,
 				C04A9AAA216DFB85000BACD4 /* LaunchScreen.storyboard */,
 				C04A9AAD216DFB85000BACD4 /* Info.plist */,
 				C04A9AAE216DFB85000BACD4 /* main.m */,
 			);
 			path = CX3DTouch;
+			sourceTree = "<group>";
+		};
+		C0F5F755216F46FC003820E6 /* 应用外 Touch */ = {
+			isa = PBXGroup;
+			children = (
+				C0F5F752216F3806003820E6 /* AppDelegate+touch.h */,
+				C0F5F753216F3806003820E6 /* AppDelegate+touch.m */,
+				C0F5F74C216F3568003820E6 /* CX3DTouch.h */,
+				C0F5F74D216F3568003820E6 /* CX3DTouch.m */,
+			);
+			path = "应用外 Touch";
+			sourceTree = "<group>";
+		};
+		C0F5F756216F4723003820E6 /* 应用内 Touch */ = {
+			isa = PBXGroup;
+			children = (
+				C04A9AA2216DFB84000BACD4 /* ViewController.h */,
+				C04A9AA3216DFB84000BACD4 /* ViewController.m */,
+				C04A9AA5216DFB84000BACD4 /* Main.storyboard */,
+				C0F5F757216F476F003820E6 /* CXListViewController.h */,
+				C0F5F758216F476F003820E6 /* CXListViewController.m */,
+				C0F5F75A216F49CA003820E6 /* CXTouchViewController.h */,
+				C0F5F75B216F49CA003820E6 /* CXTouchViewController.m */,
+			);
+			path = "应用内 Touch";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,7 +179,11 @@
 			files = (
 				C04A9AA4216DFB84000BACD4 /* ViewController.m in Sources */,
 				C04A9AAF216DFB85000BACD4 /* main.m in Sources */,
+				C0F5F754216F3806003820E6 /* AppDelegate+touch.m in Sources */,
+				C0F5F759216F476F003820E6 /* CXListViewController.m in Sources */,
 				C04A9AA1216DFB84000BACD4 /* AppDelegate.m in Sources */,
+				C0F5F74E216F3568003820E6 /* CX3DTouch.m in Sources */,
+				C0F5F75C216F49CA003820E6 /* CXTouchViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +326,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 89JR2TR578;
 				INFOPLIST_FILE = CX3DTouch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,6 +343,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 89JR2TR578;
 				INFOPLIST_FILE = CX3DTouch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
