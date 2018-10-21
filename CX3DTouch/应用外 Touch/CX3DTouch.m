@@ -11,14 +11,32 @@
 @implementation CX3DTouch
 
 + (void)load {
-    //监听程序启动完成通知
-    [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationDidFinishLaunchingNotification object:nil queue:nil usingBlock:^(NSNotification * _Nonnull note) {
-        
-        [self createTouchItems];
-    }];
+    
+    [self shareManager];
 }
 
-+ (void)createTouchItems {
++ (CX3DTouch *)shareManager {
+    static CX3DTouch *instance = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        instance = [[CX3DTouch alloc] init];
+    });
+    return instance;
+}
+
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        
+        //监听程序启动完成通知
+        [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationDidFinishLaunchingNotification object:nil queue:nil usingBlock:^(NSNotification * _Nonnull note) {
+            
+            [self createTouchItems];
+        }];
+    }
+    return self;
+}
+- (void)createTouchItems {
     
     //3D Touch 分为重压和轻压手势, 分别称作 POP(第一段重压) 和 PEEK(第二段重压), 外面的图标只需要 POP 即可;
     
